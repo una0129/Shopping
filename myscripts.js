@@ -1,3 +1,4 @@
+
 $("#password01").keypress(
     function check () {
        var value = $(this).val();
@@ -21,7 +22,7 @@ $("#password01").keypress(
      }
    }
    );
-   
+    
    function f(){
    var name = document.getElementById("name").value;
      // console.log(x)
