@@ -1,0 +1,87 @@
+
+.bg{
+  max-height: 500px;
+   background-position: center center;
+   background-size: cover;
+   background-image: url("https://haostore.fami.life/website/uploads/website_1687/zh-tw/wpitem_pic_357616.jpg?_6130");
+ }
+ .tr{
+   font-size: 20px;
+ }
+ .tr img{
+   max-width: 130px;
+ }
+ 
+ .Package{
+   background-color: rgb(61, 42, 16);
+ }
+ .u{
+   background-color: #ffd190;
+ }
+ .box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   padding: 60px;
+   transform: translate(-50%, -50%);
+   background: rgb(61, 42, 16);
+   border-radius: 10px;
+ }
+ 
+ .box h1 {
+ text-align:center;
+   color: hsl(0, 0%, 100%);
+ font-size: 50px;
+ }
+ 
+ .box .user {
+   position: relative;
+ }
+ 
+ .box .user input {
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 2px solid #fff;
+   outline: none;
+   background: transparent;
+ }
+ .box .user label {
+   position: absolute;
+   top:0;
+   left: 0;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   pointer-events: none;
+ 
+ }
+ .box  p {
+ color:#fff;
+ }
+ 
+ .box .user input:focus ~ label,
+ .box .user input:valid ~ label {
+   top: -20px;
+   left: 0;
+   color:#ffd190;
+   font-size: 12px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
