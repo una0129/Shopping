@@ -59,3 +59,21 @@ $("#password01").keypress(
      }    
      
    }
+  //  click
+  $(document).ready(function () {
+    $("button").click(function () {
+      $.post("http://140.127.196.92:1234/auth", {
+        username: $("#number").val(),
+        password: $("#password01").val()
+      },
+        function (data, status) {
+          $("p").text("資料: \n" + data + "\n狀態: " + status);
+          $.cookie("authKey", data);
+          if (data != "wrong password") {
+            var key = $.cookie("authKey");
+            console.log(key);
+            window.location.replace("cart.html");
+          };
+        });
+    });
+  });
