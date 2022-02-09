@@ -44,7 +44,7 @@ $("#password01").keypress(
   //  click
   $(document).ready(function () {
     $("button").click(function () {
-      $.post("http://140.127.196.92:1234/auth", {
+      $.post("https://www.townway.com.tw/auth", {
         username: $("#number").val(),
         password: $("#password01").val()
       },
