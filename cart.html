@@ -5,71 +5,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
- 
+
   <title>KA.BI_購物車</title>
   <link rel="icon" href="img/logo.ico" style="width: 50;">
 
+  <style>
+    body {
+      background: url(img/背景圖.jpg);
+    }
 
+    table {
+      background-color: white;
+    }
+  </style>
 </head>
 
 <body>
   <header class="blog-header Package">
-    <div class=" py-3"> 
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 text-center">
-        <a class="navbar-brand " href="index.html">
-          <img src="img/logo白.png" alt="" width="150" class="d-inline-block align-text-top">
-        </a>
-      </div>
-      <div class=" col-5 col-sm-1">
-        <a class=" btn btn-lg btn-outline-warning" href="signup.html">SIGN UP</a>
+    <div class=" py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-center">
+          <a class="navbar-brand " href="index.html">
+            <img src="img/logo白.png" alt="" width="150" class="d-inline-block align-text-top">
+          </a>
+        </div>
+        <div class=" col-5 col-sm-1">
+          <a class=" btn btn-lg btn-outline-warning" href="signup.html">SIGN UP</a>
+        </div>
       </div>
     </div>
-  </div>
   </header>
 
   <main>
     <div class="container tr  p-5">
-    <h1 class=" text-center "  >購物車</h1>
-    
-    <table class="table">
-    <tr class=" text-center" >
-        <th>商品</th>
-        <th>數量</th>
-        <th>金額</th>
-    </tr>
-    <tr>
-        <td class="py-3">
-            <img src="https://www.starbucks.com.tw/common/objects/images/product/20211015153458990.jpg"alt="...">
+      <h1 class=" text-center text-white">購物車</h1>
+
+      <table class="table">
+        <tr class=" text-center">
+          <th>商品</th>
+          <th>數量</th>
+          <th>金額</th>
+        </tr>
+        <tr>
+          <td class="py-3">
+            <img src="https://www.starbucks.com.tw/common/objects/images/product/20211015153458990.jpg" alt="...">
             精選咖啡_美式
-        </td>
-        <td style="vertical-align : middle;text-align:center;">
+          </td>
+          <td style="vertical-align : middle;text-align:center;">
             <input type="number" name="username3" min="1" max="100" value="1">
-        </td>
-        <td style="vertical-align : middle;text-align:center;">95.00 NT$</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class=" btn btn btn-secondary btn-lg" href="signup.html"> 結帳</a>
-      </td>
-    </tr>
-</table>
+          </td>
+          <td style="vertical-align : middle;text-align:center;">95.00 NT$</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <a class=" btn btn btn-secondary btn-lg " href="signup.html"> 結帳</a>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
   </main>
 
   <footer>
-    
+
   </footer>
- 
+
 
 </body>
 

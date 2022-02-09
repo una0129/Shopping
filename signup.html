@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile/style.css">
 
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -20,6 +20,11 @@
 
 
 </head>
+<style>
+  body {
+    background: url(img/背景圖.jpg);
+  }
+</style>
 
 <body>
 
@@ -38,43 +43,92 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="box">
-      <h1>會員中心</h1>
-      <form action="https://www.townway.com.tw/auth" method="post">
-        <div class="user">
-          <input type="text" name="" required="" id="name">
-          <label>姓名</label>
+  <section class="h-100 ">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img src="https://eaglecoffee.com.tw/wp-content/uploads/2020/12/-2.png" alt="Sample photo"
+                    class="img-fluid" style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;">
+                </div>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">會員註冊</h3>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="name" class="form-control form-control-lg">
+                          <label class="form-label" for="form3Example1m">姓名</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="phone" class="form-control form-control-lg">
+                          <label class="form-label" for="form3Example1n">連絡電話</label>
+                        </div>
+                      </div>
+                      <div class="col-md-9 mb-4">
+                        <div class="form-outline">
+                          <input type="date" id="day" class="form-control form-control-lg">
+                          <label class="form-label" for="form3Example1n">出生日期</label>
+                        </div>
+                      </div>
+                      <div class="col-md-2 mb-4">
+                        <div class="row">
+                          <select class=" form-control form-control-lg" style="font-size: 20px;" id="sex">
+                            <option value="1">性別</option>
+                            <option value="2">女</option>
+                            <option value="3">男</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="addres" class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example8">地址</label>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                      <input type="e-mail" id="e-mail" class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example9">Email</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="number" class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example90">帳號</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" id="password01" class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example99" id="pas">密碼</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="password" id="password02" class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example99" id="pas2">確認密碼</label>
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3">
+                      <a href="cart.html" class="btn btn-warning  btn-lg onclick=" onclick="return f();">會員註冊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="user">
-          <input type="text" name="" required="" id="addres">
-          <label>地址</label>
-        </div>
-        <div class="user">
-          <input type="e-mail" name="" required="" id="e-mail">
-          <label>信箱</label>
-        </div>
-        <div class="user">
-          <input type="text" name="" required="" id="number">
-          <label>帳號</label>
-        </div>
-        <div class="user">
-          <input type="password" name="" required="" id="password01">
-          <label>密碼</label>
-        </div>
-        <div class="user">
-          <input type="password" name="" required="" id="password02">
-          <label>確認密碼</label>
-        </div>
-        <P></P>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button type="button" class="btn btn-outline-light btn-lg" onclick="return f(this);"> 結帳</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="myscripts.js"></script>
+      </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="profile/myscripts.js"></script>
 </body>
 
 </html>
